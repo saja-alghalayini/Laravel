@@ -16,25 +16,25 @@ use App\Http\Controllers\PagesController;
 
 Route::get('/candi', function () 
 {  
-    return view('candi');  
+    return view('layouts.candi');  
 });  
 
 
 Route::get('/contact', function () 
 {  
-    return view('contact');  
+    return view('layouts.contact');  
 });  
 
 
 Route::get('/about', function () 
 {  
-    return view('about');  
+    return view('layouts.about');  
 });  
 
 
 Route::get('/login', function () 
 {  
-    return view('login');  
+    return view('layouts.login');  
 });
 
 
@@ -130,3 +130,11 @@ Route::get('candi/id/{id}/name/{name}', [PagesController::class, 'saj'] )->where
 
 
 
+// Route::get('/about', function() 
+// {
+//     return view('about');
+// });
+
+
+
+// Route::get('/master',[TestCont::class,'master']);
