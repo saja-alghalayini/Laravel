@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,7 +29,8 @@ Route::get('/contact', function ()
 
 Route::get('/about', function () 
 {  
-    return view('layouts.about');  
+    // return view('layouts.about'); 
+
 });  
 
 
@@ -36,6 +38,23 @@ Route::get('/login', function ()
 {  
     return view('layouts.login');  
 });
+
+
+
+Route::get('/about',function()
+{
+    $array=array
+    (
+        array("member"=>"Saja"),
+        array("member"=>"Sara"),
+        array("member"=>"Aya")
+
+    );
+
+    return View::make('layouts.about')-> with('array',$array);
+});
+
+
 
 
     // Only called if {id} is numeric.

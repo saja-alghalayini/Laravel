@@ -48,18 +48,11 @@ public function candyHome(){
   }
 
 
-//   public function Send()
-//   {
+  public function send()
+  {
 
-//     $array=
-//     [
-//         'memberTeam1'=>'Sara',
-//         'memberTeam2'=>'Saja',
-//         'memberTeam3'=>'Aya',
-//     ];
-
-//     return view::make('about')-> with('array',$array);
-//   }
+    
+  }
 
 
 
